@@ -1,0 +1,92 @@
+/* ===== GLOBAL ===== */
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0; padding: 0; color: #333;
+} 
+.container { max-width: 1200px; margin: auto; padding: 0 24px; }
+
+/* ===== HERO ===== */
+.ninth-cbse-banner {
+  background: linear-gradient(135deg, #1a3a5c, #29a8d0);
+  color: white; text-align: center; padding: 80px 20px;
+}
+.ninth-cbse-banner h1 { margin: 0; font-size: 2.6rem; font-weight: 700; }
+
+/* ===== BREADCRUMB ===== */
+.ninth-breadcrumb {
+  max-width: 1200px; margin: auto; padding: 18px 24px; font-size: 14px; color: #555;
+}
+.ninth-breadcrumb a { color: #29a8d0; text-decoration: none; }
+.ninth-breadcrumb a:hover { text-decoration: underline; }
+
+/* ===== INTRO SECTION ===== */
+.ninth-intro {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 60px; align-items: flex-start; padding: 70px 24px; max-width: 1200px; margin: auto;
+}
+.ninth-intro-img img {
+  width: 100%; border-radius: 12px; height: auto; max-height: 420px;
+  object-fit: cover; box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.ninth-intro-text h2 { font-size: 2.2rem; font-weight: 700; color: #1a1a2e; margin-bottom: 10px; }
+.ninth-underline { width: 70px; height: 4px; background: #29a8d0; border-radius: 50px; margin-bottom: 22px; }
+.ninth-intro-text p { line-height: 2; color: #555; font-size: 15.5px; }
+.social-icons { display: flex; gap: 10px; margin-top: 20px; }
+.social-icons a {
+  width: 38px; height: 38px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-size: 15px; font-weight: 700; text-decoration: none;
+}
+.si-fb { background: #1877f2; }
+.si-tw { background: #1da1f2; }
+.si-li { background: #0a66c2; }
+.si-wa { background: #25d366; }
+.si-em { background: #ea4335; }
+
+/* ===== BODY SECTIONS ===== */
+.ninth-body { max-width: 1050px; margin: auto; padding: 0 24px 80px; }
+.ninth-body p { line-height: 2; font-size: 15.5px; margin-bottom: 28px; color: #555; }
+.ninth-body h2 { font-size: 1.7rem; font-weight: 700; margin-top: 48px; margin-bottom: 14px; color: #111827; }
+.ninth-body h3 { font-size: 1.15rem; font-weight: 700; margin-top: 28px; margin-bottom: 12px; color: #111827; }
+.ninth-body ul, .ninth-body ol { padding-left: 22px; margin-bottom: 28px; }
+.ninth-body li { font-size: 15.5px; line-height: 2; margin-bottom: 14px; color: #444; }
+.ninth-body li strong { color: #111827; }
+.ninth-body a { color: #29a8d0; }
+
+/* ===== UNIQUE FEATURES ===== */
+.feature-num { font-size: 1.2rem; font-weight: 700; margin-top: 32px; margin-bottom: 10px; color: #111827; }
+.feature-num span { text-decoration: underline; }
+
+/* ===== LOCATIONS ===== */
+.ninth-locations { max-width: 1050px; margin: 0 auto 50px; padding: 0 24px; }
+.ninth-locations h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.ninth-locations a { color: #29a8d0; font-size: 15px; }
+
+/* ===== FAQ ===== */
+.ninth-faq { background: #f9fafb; padding: 60px 20px; }
+.ninth-faq-inner { max-width: 900px; margin: auto; }
+.ninth-faq h2 { text-align: center; font-size: 2rem; font-weight: 800; margin-bottom: 6px; }
+.ninth-faq-sub { text-align: center; color: #555; font-size: 15px; margin-bottom: 8px; }
+.faq-divider { width: 60px; height: 3px; background: #29a8d0; margin: 0 auto 36px; border-radius: 4px; }
+.faq-item {
+  border: 1px solid #e5e7eb; border-radius: 8px; margin-bottom: 12px;
+  background: white; overflow: hidden; cursor: pointer;
+}
+.faq-question {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 18px 24px; font-size: 15px; font-weight: 500; color: #1a1a2e;
+}
+.faq-arrow { font-size: 18px; color: #555; flex-shrink: 0; margin-left: 16px; transition: transform 0.2s; }
+.faq-answer { padding: 0 24px 18px; font-size: 14.5px; color: #555; line-height: 1.8; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .ninth-intro { grid-template-columns: 1fr; }
+  .ninth-intro-img img { max-height: 280px; height: auto; }
+  .ninth-cbse-banner h1 { font-size: 1.9rem; }
+}
+@media (max-width: 600px) {
+  .ninth-cbse-banner h1 { font-size: 1.5rem; }
+  .ninth-intro-text h2 { font-size: 1.6rem; }
+  .ninth-body h2 { font-size: 1.4rem; }
+}

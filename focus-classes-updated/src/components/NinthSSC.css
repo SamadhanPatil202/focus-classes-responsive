@@ -1,0 +1,212 @@
+/* ===== HERO ===== */
+.ninth-ssc-banner {
+  background: linear-gradient(135deg, #2d4150, #1e404b);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+.ninth-ssc-banner h1 {
+  margin: 0;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+/* ===== BREADCRUMB ===== */
+.ssc-breadcrumb {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 24px;
+  font-size: 14px;
+  color: #555;
+}
+.ssc-breadcrumb a {
+  color: #617f88;
+  text-decoration: none;
+}
+.ssc-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* ===== INTRO SECTION ===== */
+.ssc-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: flex-start;
+  padding: 70px 24px;
+  max-width: 1200px;
+  margin: auto;
+}
+.ssc-intro-img img {
+  width: 100%;
+  border-radius: 12px;
+  height: auto; max-height: 420px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.ssc-intro-text h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+.ssc-underline {
+  width: 70px;
+  height: 4px;
+  background: #29a8d0;
+  border-radius: 50px;
+  margin-bottom: 22px;
+}
+.ssc-intro-text p {
+  line-height: 2;
+  color: #555;
+  font-size: 15.5px;
+}
+
+/* Social Icons + Book Demo Button */
+.ssc-social-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+.ssc-social-row a.si {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.si-fb {
+  background: #1877f2;
+}
+.si-tw {
+  background: #1da1f2;
+}
+.si-li {
+  background: #0a66c2;
+}
+.si-wa {
+  background: #25d366;
+}
+.btn-book-demo {
+  background: #29a8d0;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 6px;
+}
+.btn-book-demo:hover {
+  background: #1a8ab0;
+}
+
+/* ===== BODY ===== */
+.ssc-body {
+  max-width: 1050px;
+  margin: auto;
+  padding: 0 24px 80px;
+}
+.ssc-body p {
+  line-height: 2;
+  font-size: 15.5px;
+  margin-bottom: 20px;
+  color: #555;
+}
+.ssc-body h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 44px;
+  margin-bottom: 14px;
+  color: #111827;
+}
+.ssc-body h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+.ssc-body ul,
+.ssc-body ol {
+  padding-left: 22px;
+  margin-bottom: 24px;
+}
+.ssc-body li {
+  font-size: 15.5px;
+  line-height: 2;
+  margin-bottom: 10px;
+  color: #444;
+}
+.ssc-body li strong {
+  color: #111827;
+}
+.ssc-body a {
+  color: #29a8d0;
+}
+
+/* small label above heading */
+.ssc-label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+  margin-top: 44px;
+}
+
+/* ===== TAGS ===== */
+.ssc-tags {
+  max-width: 1050px;
+  margin: 0 auto 60px;
+  padding: 0 24px;
+}
+.ssc-tags h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.ssc-tags a {
+  display: inline-block;
+  color: #29a8d0;
+  font-size: 14px;
+  border: 1px solid #29a8d0;
+  border-radius: 4px;
+  padding: 4px 12px;
+  text-decoration: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .ssc-intro {
+    grid-template-columns: 1fr;
+  }
+  .ssc-intro-img img {
+    height: 300px;
+  }
+  .ninth-ssc-banner h1 {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 600px) {
+  .ninth-ssc-banner h1 {
+    font-size: 1.5rem;
+  }
+  .ssc-intro-text h2 {
+    font-size: 1.6rem;
+  }
+  .ssc-body h2 {
+    font-size: 1.3rem;
+  }
+  .ssc-body h3 {
+    font-size: 1.1rem;
+  }
+}

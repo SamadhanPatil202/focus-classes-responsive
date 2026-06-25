@@ -1,0 +1,166 @@
+.course-page{
+  background:#f7f7f7;
+}
+
+.course-hero{
+  height:140px;
+  background:linear-gradient(90deg,#9fc5d3,#3a4450);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.course-hero h1{
+  color:#fff;
+  font-size:42px;
+  text-align:center;
+}
+
+.breadcrumb{
+  background:#fff;
+  padding:15px 12%;
+  border-bottom:1px solid #ddd;
+}
+
+.course-top{
+  max-width:1200px;
+  margin:60px auto;
+  display:flex;
+  gap:60px;
+  align-items:center;
+}
+
+.course-left{
+  flex:1;
+}
+
+.course-left h2{
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+.course-left p{
+  line-height:1.8;
+  color:#666;
+}
+
+.course-left button{
+  margin-top:20px;
+  border:none;
+  background:#9fc5d3;
+  color:white;
+  padding:12px 25px;
+  border-radius:30px;
+  margin-bottom:18px;
+}
+
+.course-right{
+  flex:1;
+}
+
+.course-right img{
+  width:100%;
+  border-radius:8px;
+}
+
+.course-description{
+  max-width:1200px;
+  margin:auto;
+  padding-bottom:80px;
+}
+
+.course-description p{
+  line-height:2;
+  color:#555;
+  margin-bottom:20px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.social-icons a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.social-icons a:nth-child(1) {
+  background: #1877f2;
+}
+
+.social-icons a:nth-child(2) {
+  background: #1da1f2;
+}
+
+.social-icons a:nth-child(3) {
+  background: #0a66c2;
+}
+
+.social-icons a:nth-child(4) {
+  background: #25d366;
+}
+
+.social-icons a:hover {
+  transform: translateY(-4px);
+}
+
+.demo-btn {
+  border: none;
+  background: #9fc5d3;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.demo-btn:hover {
+  background: #7fb4c7;
+}
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .course-top {
+    flex-direction: column !important;
+    gap: 30px !important;
+    margin: 40px auto !important;
+    padding: 0 5% !important;
+  }
+  .course-hero h1 {
+    font-size: 28px !important;
+  }
+  .course-left h2 {
+    font-size: 28px !important;
+  }
+  .breadcrumb {
+    padding: 12px 5% !important;
+    font-size: 13px !important;
+  }
+  .course-description {
+    padding: 0 5% 50px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .course-hero {
+    height: auto !important;
+    padding: 30px 16px !important;
+  }
+  .course-hero h1 {
+    font-size: 22px !important;
+  }
+  .course-left h2 {
+    font-size: 22px !important;
+  }
+}

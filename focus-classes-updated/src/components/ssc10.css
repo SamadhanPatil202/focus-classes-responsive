@@ -1,0 +1,50 @@
+/* ssc10.css — reuses cbse-* classes, adds ssc-* extras */
+
+.cd-bullet-list {
+  padding-left: 20px;
+  margin-top: 12px;
+}
+
+.cd-bullet-list li {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.85;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 12px;
+}
+
+.cd-sub-list {
+  padding-left: 20px;
+  margin-top: 6px;
+  list-style-type: circle;
+}
+
+.cd-sub-list li {
+  font-size: 13.5px;
+  color: #555;
+  line-height: 1.8;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 4px;
+}
+
+/* SSC-specific intro layout (used in SSC10.jsx) */
+.ssc-intro-section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ssc-intro-img img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .ssc-intro-img img {
+    max-height: 260px;
+  }
+}

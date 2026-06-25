@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ─── Reset ─────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ─── Root ───────────────────────────────────────── */
+.cp-root {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f6f8;
+  min-height: 100vh;
+}
+
+/* ─── Hero Banner ────────────────────────────────── */
+.cp-hero {
+  background: linear-gradient(135deg, #2c4a6e 0%, #4a7fa5 50%, #6ba8c4 100%);
+  padding: 56px 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cp-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(255, 255, 255, 0.08) 0%, transparent 60%);
+}
+
+.cp-hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #fff;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+/* ─── Breadcrumb ─────────────────────────────────── */
+.cp-breadcrumb {
+  padding: 14px 40px;
+  font-size: 13px;
+  color: #666;
+  border-bottom: 1px solid #e8e8e8;
+  background: #fff;
+}
+
+.cp-breadcrumb a {
+  color: #4a7fa5;
+  text-decoration: none;
+}
+
+.cp-breadcrumb span {
+  margin: 0 6px;
+  color: #aaa;
+}
+
+/* ─── Main Grid ──────────────────────────────────── */
+.cp-main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  .cp-main {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Card (shared) ──────────────────────────────── */
+.cp-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.07);
+}
+
+/* ─── Map ────────────────────────────────────────── */
+.cp-map-card iframe {
+  width: 100%;
+  height: 280px;
+  border: none;
+  display: block;
+}
+
+/* ─── Info Section ───────────────────────────────── */
+.cp-info {
+  padding: 28px 28px 32px;
+}
+
+.cp-info h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: #1a2e42;
+  margin-bottom: 10px;
+}
+
+.cp-info p {
+  font-size: 13.5px;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* ─── Detail Row ─────────────────────────────────── */
+.cp-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 13.5px;
+  color: #444;
+}
+
+.cp-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: #4a7fa5;
+}
+
+/* ─── WhatsApp Button ────────────────────────────── */
+.cp-wa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #25d366;
+  border-radius: 50%;
+  margin: 8px 0 20px;
+  transition: transform 0.2s;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cp-wa:hover {
+  transform: scale(1.1);
+}
+
+.cp-wa svg {
+  width: 22px;
+  height: 22px;
+  fill: white;
+}
+
+/* ─── Map Buttons ────────────────────────────────── */
+.cp-map-btns {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cp-map-btn {
+  padding: 8px 20px;
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1.5px solid #4a7fa5;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.cp-map-btn.outline {
+  background: transparent;
+  color: #4a7fa5;
+}
+
+.cp-map-btn.outline:hover {
+  background: #4a7fa5;
+  color: #fff;
+}
+
+.cp-map-btn.filled {
+  background: #4a7fa5;
+  color: #fff;
+  border-color: #4a7fa5;
+}
+
+.cp-map-btn.filled:hover {
+  background: #2c4a6e;
+  border-color: #2c4a6e;
+}
+
+/* ─── Form Card ──────────────────────────────────── */
+.cp-form-card {
+  padding: 36px 32px 40px;
+}
+
+.cp-form-card h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  color: #1a2e42;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+/* ─── Form Fields ────────────────────────────────── */
+.cp-field {
+  margin-bottom: 18px;
+}
+
+.cp-field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  letter-spacing: 0.2px;
+}
+
+.cp-field input,
+.cp-field textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid #dde3ea;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background: #fafbfc;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  resize: none;
+}
+
+.cp-field input::placeholder,
+.cp-field textarea::placeholder {
+  color: #aab;
+}
+
+.cp-field input:focus,
+.cp-field textarea:focus {
+  border-color: #4a7fa5;
+  box-shadow: 0 0 0 3px rgba(74, 127, 165, 0.12);
+  background: #fff;
+}
+
+.cp-field textarea {
+  height: 100px;
+}
+
+/* ─── Submit Button ──────────────────────────────── */
+.cp-submit {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #4a7fa5, #2c4a6e);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: opacity 0.2s, transform 0.15s;
+  letter-spacing: 0.3px;
+}
+
+.cp-submit:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.cp-submit:active {
+  transform: translateY(0);
+}
+
+/* ─── Success Message ────────────────────────────── */
+.cp-success {
+  text-align: center;
+  padding: 12px;
+  background: #eafaf1;
+  border-radius: 8px;
+  color: #27ae60;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 14px;
+}
+
+
+/* ─── WhatsApp Modal ─────────────────────────────── */
+.wa-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.wa-modal {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 28px 28px;
+  width: 100%;
+  max-width: 460px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
+  position: relative;
+  
+}
+
+.wa-modal h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a2e42;
+  margin-bottom: 20px;
+}
+
+.wa-input,
+.wa-textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #dde3ea;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background: #fafbfc;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  margin-bottom: 14px;
+}
+
+.wa-input:focus,
+.wa-textarea:focus {
+  border-color: #25d366;
+  box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.12);
+  background: #fff;
+}
+
+.wa-input::placeholder,
+.wa-textarea::placeholder {
+  color: #aab;
+}
+
+.wa-textarea {
+  height: 110px;
+  resize: none;
+}
+
+.wa-btns {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+  justify-content: center;
+}
+
+.wa-btn-send {
+  padding: 11px 24px;
+  background: #7eb8c9;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.wa-btn-send:hover {
+  background: #5aa0b5;
+}
+
+.wa-btn-close {
+  padding: 11px 24px;
+  background: transparent;
+  color: #555;
+  border: 1.5px solid #ccc;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.wa-btn-close:hover {
+  border-color: #999;
+  color: #333;
+}

@@ -1,0 +1,258 @@
+/* NeetClasses.css — prefixed neet- to avoid global conflicts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.neet-page {
+  font-family: 'Poppins', sans-serif;
+  color: #1a1a2e;
+  background: #ffffff;
+}
+
+/* ── HERO ── */
+.neet-hero {
+  position: relative;
+  background: linear-gradient(90deg, #1a2a4a 0%, #2a5298 60%, #0a9eb5 100%);
+  padding: 60px 40px 44px;
+  text-align: center;
+  overflow: hidden;
+}
+.neet-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.neet-hero-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: white;
+  position: relative;
+  z-index: 1;
+  line-height: 1.3;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.neet-breadcrumb {
+  margin-top: 14px;
+  color: rgba(255,255,255,0.72);
+  font-size: 13px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── INTRO ── */
+.neet-intro-section {
+  background: #f8f9fa;
+  padding: 56px 40px;
+}
+.neet-intro-inner {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.neet-intro-text { flex: 1; }
+.neet-section-heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  display: inline-block;
+  border-bottom: 3px solid #0a9eb5;
+  padding-bottom: 4px;
+  margin-bottom: 14px;
+}
+.neet-intro-text p {
+  line-height: 1.85;
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.neet-share-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 6px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+}
+.neet-share-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1;
+}
+.neet-fb { background: #1877f2; }
+.neet-tw { background: #000; font-size: 11px; }
+.neet-li { background: #0a66c2; font-size: 11px; }
+.neet-wa { background: #25d366; font-size: 20px; }
+.neet-demo-btn {
+  margin-left: 6px;
+  padding: 10px 22px;
+  background: transparent;
+  border: 2px solid #0a9eb5;
+  color: #0a9eb5;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.2s;
+}
+.neet-demo-btn:hover { background: #0a9eb5; color: white; }
+.neet-intro-image { flex: 1; }
+.neet-intro-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: auto;
+  max-height: 340px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.1);
+}
+
+/* ── CONTENT SECTION ── */
+.neet-content-section {
+  background: #ffffff;
+  padding: 56px 40px;
+}
+.neet-content-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.neet-h2 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-top: 36px;
+  margin-bottom: 14px;
+}
+.neet-content-inner > p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.85;
+  margin-bottom: 14px;
+}
+.neet-feature-block {
+  margin-bottom: 24px;
+}
+.neet-feature-block h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+.neet-feature-block h3 strong { font-weight: 700; }
+.neet-feature-block p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.85;
+}
+.neet-subject-heading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+.neet-list {
+  list-style: disc;
+  padding-left: 22px;
+  margin-bottom: 16px;
+}
+.neet-list li {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.85;
+  margin-bottom: 4px;
+}
+.neet-phone-link {
+  color: #0a9eb5;
+  text-decoration: none;
+  font-weight: 600;
+}
+.neet-phone-link:hover { text-decoration: underline; }
+
+/* ── FAQ ── */
+.neet-faq-section {
+  background: #f8f9fa;
+  padding: 60px 40px;
+}
+.neet-faq-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.neet-faq-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: center;
+  color: #1a1a2e;
+}
+.neet-faq-sub {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+  margin: 8px 0 14px;
+}
+.neet-faq-divider {
+  width: 60px;
+  height: 3px;
+  background: #0a9eb5;
+  margin: 0 auto 32px;
+  border-radius: 2px;
+}
+.neet-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.neet-faq-item {
+  border: 1px solid #e2e8f0;
+  border-bottom: none;
+  cursor: pointer;
+  background: white;
+}
+.neet-faq-item:last-child { border-bottom: 1px solid #e2e8f0; }
+.neet-faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a1a2e;
+  gap: 12px;
+}
+.neet-faq-icon {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  color: #0a9eb5;
+  transition: transform 0.3s;
+}
+.neet-faq-item.open .neet-faq-icon { transform: rotate(180deg); }
+.neet-faq-answer {
+  padding: 14px 24px 18px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.8;
+  border-top: 1px solid #e2e8f0;
+  background: #fafafa;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .neet-hero { padding: 44px 16px 32px; }
+  .neet-hero-title { font-size: 1.4rem; }
+  .neet-intro-inner { flex-direction: column; gap: 24px; }
+  .neet-intro-image img { max-height: 220px; height: auto; }
+  .neet-intro-section,
+  .neet-content-section,
+  .neet-faq-section { padding: 36px 16px; }
+  .neet-demo-btn { margin-left: 0; margin-top: 4px; }
+}

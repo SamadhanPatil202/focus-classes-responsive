@@ -1,0 +1,316 @@
+.neet-page {
+  width: 100%;
+  padding: 70px 8%;
+  background: #f7f7f7;
+}
+
+.neet-hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.neet-left {
+  flex: 1;
+}
+
+.neet-date {
+  color: #7c7c7c;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.neet-left h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.neet-line {
+  width: 90px;
+  height: 4px;
+  background: #9ecbe0;
+  margin: 20px 0;
+  border-radius: 20px;
+}
+
+.neet-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.neet-left hr {
+  border: none;
+  border-top: 1px solid #d5d5d5;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.social-icons a {
+  width: 30px;
+  height: 30px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.social-icons a:nth-child(1) {
+  background: #1877f2; /* Facebook */
+}
+
+.social-icons a:nth-child(2) {
+  background: #1da1f2; /* Twitter */
+}
+
+.social-icons a:nth-child(3) {
+  background: #0077b5; /* LinkedIn */
+}
+
+.social-icons a:nth-child(4) {
+  background: #25d366; /* WhatsApp */
+}
+
+.social-icons a:hover {
+  transform: translateY(-4px);
+}
+
+.neet-right {
+  flex: 1;
+}
+
+.neet-right img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .neet-hero-container {
+    flex-direction: column;
+  }
+
+  .neet-left h1 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .neet-page {
+    padding: 40px 20px;
+  }
+
+  .neet-left h1 {
+    font-size: 30px;
+  }
+
+  .neet-date {
+    font-size: 16px;
+  }
+
+  .neet-text {
+    font-size: 16px;
+  }
+
+  .social-icons a {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
+}
+
+/* ===================== */
+/*   NEET Article Body   */
+/* ===================== */
+
+.neet-content {
+  max-width: 1350px;
+  margin: 40px auto;
+  padding: 0 25px;
+}
+
+.neet-content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #16202c;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.neet-intro-text {
+  font-size: 16px;
+  color: #667085;
+  line-height: 1.9;
+  margin-bottom: 55px;
+}
+
+.neet-intro-text span {
+  color: #8fcbe0;
+  font-weight: 600;
+}
+
+.neet-content h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #16202c;
+  margin-bottom: 15px;
+}
+
+.neet-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #16202c;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+.neet-content p {
+  font-size: 16px;
+  color: #667085;
+  line-height: 1.9;
+  margin-bottom: 10px;
+}
+
+/* ========================= */
+/*   NEET Article Sections   */
+/* ========================= */
+
+.neet-article-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px 60px;
+}
+
+.neet-article-content h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #182131;
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+.neet-article-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #182131;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.neet-article-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #5f6675;
+  margin-bottom: 20px;
+}
+
+.neet-article-content ul {
+  margin: 15px 0 35px 35px;
+}
+
+.neet-article-content li {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.neet-article-content li strong {
+  color: #111;
+}
+
+.neet-article-content a {
+  color: #8cc8e0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.neet-article-content a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .neet-article-content {
+    padding: 20px;
+  }
+
+  .neet-article-content h2 {
+    font-size: 30px;
+  }
+
+  .neet-article-content h3 {
+    font-size: 24px;
+  }
+
+  .neet-article-content p,
+  .neet-article-content li {
+    font-size: 16px;
+  }
+}
+
+/* ============ */
+/*     FAQ      */
+/* ============ */
+
+.neet-faq-item {
+  margin-bottom: 30px;
+}
+
+.neet-faq-item h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #182131;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.neet-faq-item p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #5f6675;
+}
+
+.neet-faq-last {
+  font-size: 18px;
+  color: #5f6675;
+  margin-top: 18px;
+}
+
+.neet-faq-last a,
+.neet-faq-item a {
+  color: #8cc8e0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.neet-faq-last a:hover,
+.neet-faq-item a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .neet-faq-item h4 {
+    font-size: 20px;
+  }
+
+  .neet-faq-item p,
+  .neet-faq-last {
+    font-size: 16px;
+  }
+}

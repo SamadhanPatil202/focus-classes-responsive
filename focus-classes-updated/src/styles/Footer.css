@@ -1,0 +1,186 @@
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #1c222b;
+  padding: 60px 6% 20px;
+}
+
+.footer-container {
+  max-width: 1600px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+}
+
+.footer-column h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-column p,
+.footer-column li {
+  color: #d3d3d3;
+  font-size: 15px;
+  line-height: 1.8;
+  list-style: none;
+}
+
+.footer-column ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-column li:hover {
+  color: #94cfe2;
+}
+
+.footer-icon {
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  color: #d3d3d3;
+  font-size: 14px;
+}
+
+.footer-bottom span {
+  color: #ff9900;
+  font-weight: 600;
+}
+
+
+/* Links Hover */
+
+.footer-column li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-column li:hover {
+  color: #94cfe2;
+  transform: translateX(6px);
+}
+
+/* Contact Details Hover */
+
+.footer-column p {
+  transition: all 0.3s ease;
+}
+
+.footer-column p:hover {
+  color: #ffffff;
+}
+
+/* Icons Hover */
+
+.footer-icon {
+  margin-right: 10px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.footer-column p:hover .footer-icon {
+  color: #94cfe2;
+  transform: scale(1.15);
+}
+
+/* Heading Hover */
+
+.footer-column h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.footer-column h3:hover {
+  color: #94cfe2;
+}
+
+/* Powered By Hover */
+
+.footer-bottom span {
+  color: #ff9900;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.footer-bottom span:hover {
+  color: #ffd166;
+}
+
+/* Footer Column Hover */
+
+.footer-column {
+  transition: all 0.3s ease;
+}
+
+.footer-column:hover {
+  transform: translateY(-4px);
+}
+
+/* Optional Footer Animation */
+
+.footer {
+  transition: all 0.3s ease;
+}
+
+.footer:hover {
+  background: #202834;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-column h3 {
+    font-size: 18px;
+  }
+
+  .footer-column p,
+  .footer-column li {
+    font-size: 14px;
+  }
+}
