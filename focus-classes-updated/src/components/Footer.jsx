@@ -76,7 +76,7 @@ function Footer() {
         <p>© 2026 Focus Coaching Classes. All Rights Reserved.</p>
 
         <p>
-          Powered by <span>Technokraft</span>
+          Powered by <span>Samadhan Patil</span>
         </p>
       </div>
     </footer>
