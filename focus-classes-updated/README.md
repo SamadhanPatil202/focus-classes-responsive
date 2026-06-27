@@ -1,2 +1,2 @@
 
-project link : focus-classes-responsive.vercel.app
+project link : https://focus-classes-responsive.vercel.app/
